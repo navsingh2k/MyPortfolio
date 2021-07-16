@@ -235,6 +235,26 @@ left: -5px;
     grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
     justify-content: center;
+    padding-bottom: 50px;
+}
+.post{
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+.post-preview{
+    background-color: var(--secondaryColor);
+    padding: 15px;
+}
+
+.post-title{
+    color: black;
+    margin: 0;
+}
+.post-intro{
+    color: black;
+    font-size: 14px;
 }
 .thumbnail{
     width: 100%;
