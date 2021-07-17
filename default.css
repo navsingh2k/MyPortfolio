@@ -13,7 +13,7 @@
 }
 ul{
    
-list-style-type: circle;
+list-style-type: none;
 
 
 }
@@ -235,6 +235,16 @@ left: -5px;
 }
 #social_img{
     width: 100%;
+    border: 2px solid var(--borderColor);
+    
+}
+#git-icon{
+    margin: 0 5px;
+    font-size: 19px;
+}
+#linkedin-icon{
+    margin: 0 5px;
+    font-size: 19px;
 }
 .post-wrapper{
     display: grid;
@@ -261,6 +271,7 @@ left: -5px;
 .post-intro{
     color: black;
     font-size: 14px;
+    
 }
 .thumbnail{
     width: 100%;
