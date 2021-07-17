@@ -9,6 +9,7 @@
     --themeDotBorder:#24292e; 
     --previewBg:rgb(251,249,243,0.8);
     --previewShadow:#f0ead6;
+    --buttonColor:black;
 }
 ul{
    
@@ -293,6 +294,14 @@ background-color: #FC6058;
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
+}
+#submit-btn{
+    color:var(--secondaryColor);
+    border: none;
+    background-color: var(--buttonColor);
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
 }
 @media screen and (max-width: 1200px){
 .main-container{
