@@ -1,12 +1,12 @@
 console.log('Its working')
 
-// let theme = localStorage.getItem('theme')
+let theme = localStorage.getItem('theme')
 
-// if(theme == null){
-// 	setTheme('light')
-// }else{
-// 	setTheme(theme)
-// }
+if(theme == null){
+	setTheme('light')
+}else{
+	setTheme(theme)
+}
 
 let themeDots = document.getElementsByClassName('theme-dot')
 
@@ -36,5 +36,5 @@ function setTheme(mode){
 		document.getElementById('theme-style').href = 'purple.css'
 	}
 
-	// localStorage.setItem('theme', mode)
+	localStorage.setItem('theme', mode)
 }
