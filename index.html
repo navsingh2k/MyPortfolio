@@ -204,7 +204,11 @@
             }
           }).then(response => {
             status.innerHTML = "Message sent!,I will contact you soon.";
-            form.reset()
+            setTimeout(function(){
+                form.reset()
+            window.location.reload();
+            }, 3000);
+            
           }).catch(error => {
             status.innerHTML = "Oops! There was a problem submitting your form"
           });
