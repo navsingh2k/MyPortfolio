@@ -170,23 +170,47 @@
     <section class="s2" id="contact">
         <div class="main-container">
             <h3 style="text-align: center;">Get In Touch.</h3>
-            <form action="https://formcarry.com/s/DPNtX0G7WFb" method="POST" accept-charset="UTF-8"  id="contact-form">
+            <form action="https://formspree.io/f/mpzkjedy"
+            method="POST" id="my-form">
                 <label>Name</label>
-                <input type="text" class="input-field" name="name">
+                <input type="text" class="input-field" name="name" required>
 
                 <label>Subject</label>
-                <input type="text" class="input-field" name="subject">
+                <input type="text" class="input-field" name="subject" required>
 
                 <label>Email</label>
-                <input type="text" class="input-field" name="email">
+                <input type="email" class="input-field" name="email" required>
                 <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
+                <textarea class="input-field" name="message" required></textarea>
+                
 
                 <input type="submit" id="submit-btn" value="Send" class="submitButton">
+                <p id="my-form-status"></p>
             </form>
         </div>
     </section>
-
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Message sent!,I will contact you soon.";
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 

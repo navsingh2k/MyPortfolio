@@ -323,7 +323,7 @@ background-color: #FC6058;
     margin-top: 10px;
 }
 
-#contact-form{
+#my-form{
     display: block;
     max-width: 600px;
     margin: 0 auto;
@@ -334,12 +334,18 @@ background-color: #FC6058;
     margin-bottom: 50px;
 }
 
-#contact-form label{
+#my-form label{
     line-height: 2.7em;
 }
-#contact-from textarea{
+#my-from textarea{
     min-height: 100px;
     font-size: 14px;
+}
+
+#my-form-status{
+   
+    text-align: center;
+    
 }
 
 .input-field{
